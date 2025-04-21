@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hosting Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1abc9c;
+      --dark: #0e0e0e;
+      --gray: #999;
+      --white: #fff;
+    }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #16a085;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.section p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  text-align: left;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+}
+
+form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #16a085;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: #111;
+  color: #777;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HostingKu</h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>  <section class="hero">
+    <div class="hero-content">
+      <h2>Solusi Hosting Premium & Terpercaya</h2>
+      <p>Hosting cepat, aman, dan profesional untuk mendukung pertumbuhan website Anda.</p>
+      <a href="#harga" class="btn">Lihat Paket Hosting</a>
+    </div>
+  </section>  <section class="section" id="layanan">
+    <h3>Layanan Kami</h3>
+    <p>Kami menyediakan berbagai solusi hosting sesuai kebutuhan Anda.</p>
+    <div class="cards">
+      <div class="card">
+        <h4>Hosting Personal</h4>
+        <ul>
+          <li>1 Website</li>
+          <li>1 GB Storage</li>
+          <li>Bandwidth Unlimited</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Hosting Bisnis</h4>
+        <ul>
+          <li>10 Website</li>
+          <li>10 GB SSD</li>
+          <li>Gratis Domain</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Hosting Premium</h4>
+        <ul>
+          <li>Unlimited Website</li>
+          <li>Unlimited Storage</li>
+          <li>SSL & Backup Harian</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <section class="section" id="harga">
+    <h3>Harga Paket</h3>
+    <p>Pilih paket terbaik sesuai kebutuhan dan anggaran Anda.</p>
+    <div class="cards">
+      <div class="card">
+        <h4>Personal</h4>
+        <p>Rp 15.000 / bulan</p>
+      </div>
+      <div class="card">
+        <h4>Bisnis</h4>
+        <p>Rp 45.000 / bulan</p>
+      </div>
+      <div class="card">
+        <h4>Premium</h4>
+        <p>Rp 75.000 / bulan</p>
+      </div>
+    </div>
+<!-- (isi tetap, hanya bagian kontak diperbarui) --><section class="section" id="kontak">
+  <h3>Hubungi Kami</h3>
+  <p>Siap membantu Anda 24/7. Kirim pertanyaan Anda ke <a href="mailto:support@hostingku.id" style="color: #1abc9c; text-decoration: underline;">support@hostingku.id</a></p>
+  <a href="https://wa.me/628567914429" class="btn" style="margin-top:1rem; display:inline-block;">Hubungi Penjual via WhatsApp</a>
+</section>
+<!-- (lanjutan isi tetap) -->
+</section>
+<!-- (lanjutan isi tetap) -->
+  </section>  <section class="section" id="form">
+    <h3>Form Pemesanan</h3>
+    <form action="#" method="post">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Alamat Email" required>
+      <select name="layanan" required>
+        <option value="">-- Pilih Layanan --</option>
+        <option value="Personal">Personal</option>
+        <option value="Bisnis">Bisnis</option>
+        <option value="Premium">Premium</option>
+      </select>
+      <textarea name="catatan" placeholder="Catatan tambahan (opsional)" rows="4"></textarea>
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </section>  <footer>
+    &copy; 2025 HostingKu. Semua Hak Dilindungi.
+  </footer>
+</body>
+</html>
